@@ -1,7 +1,7 @@
 from rest_framework.permissions import BasePermission, SAFE_METHODS
 
 
-class IsAdminAllOrIsAuthenticatedReadOnly(BasePermission):
+class IsAdminOrIfAuthenticatedReadOnly(BasePermission):
     """
     The request for admin user to get/update/delete data
     For auth user only to get data
